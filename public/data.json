@@ -86,50 +86,6 @@
       "ticket_price": 12.99,
       "event_categories": ["Gaming"],
       "location": "Denver, CO"
-    },
-    {
-      "id": 9,
-      "title": "Cybersecurity Summit",
-      "posted_date": "2023-02-10",
-      "event_date": "2023-06-22",
-      "thumbnail_image": "https://i.ibb.co/55k6P94/Rectangle-9.webp",
-      "description": "Learn about the latest cybersecurity threats and strategies to protect your digital assets.",
-      "ticket_price": 22.75,
-      "event_categories": ["Tech"],
-      "location": "San Diego, CA"
-    },
-    {
-      "id": 10,
-      "title": "Mobile Gaming Expo",
-      "posted_date": "2023-01-05",
-      "event_date": "2023-05-15",
-      "thumbnail_image": "https://i.ibb.co/m95d7f4/Rectangle-10.webp",
-      "description": "Explore the world of mobile gaming, play new releases, and meet mobile game developers.",
-      "ticket_price": 18.50,
-      "event_categories": ["Gaming"],
-      "location": "Orlando, FL"
-    },
-    {
-      "id": 11,
-      "title": "Artificial Intelligence Workshop",
-      "posted_date": "2022-12-01",
-      "event_date": "2023-04-10",
-      "thumbnail_image": "https://i.ibb.co/N6Fgh9F/Rectangle-11.webp",
-      "description": "Hands-on workshop to learn practical applications of artificial intelligence in various industries.",
-      "ticket_price": 26.99,
-      "event_categories": ["Tech"],
-      "location": "Boston, MA"
-    },
-    {
-      "id": 12,
-      "title": "Gaming Night Extravaganza",
-      "posted_date": "2022-11-15",
-      "event_date": "2023-03-28",
-      "thumbnail_image": "https://i.ibb.co/BNwBLXL/Rectangle-12.webp",
-      "description": "A fun-filled night of gaming, competitions, and prizes for gamers of all skill levels.",
-      "ticket_price": 10.00,
-      "event_categories": ["Gaming"],
-      "location": "Houston, TX"
     }
   ]
   
