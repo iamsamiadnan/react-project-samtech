@@ -1,19 +1,19 @@
-import { useLoaderData, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import {
 	BiCalendar,
 	BiMapPin,
-	BiSolidDiamond,
 	BiSolidDiscount,
 	BiTimeFive,
 } from "react-icons/bi";
 import { useEffect, useState } from "react";
+import toast from "react-hot-toast";
 
 export default function Details() {
 	const [event, setEvent] = useState({});
 
 	const { id } = useParams();
 
-	console.log("use loader data", event);
+
 
 	const {
 		title,
@@ -34,7 +34,7 @@ export default function Details() {
 				setEvent(event);
 			})
 			.catch((err) => {
-				console.log(err);
+				toast.error(err)
 			});
 
 

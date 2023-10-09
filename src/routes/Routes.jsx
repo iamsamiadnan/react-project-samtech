@@ -19,8 +19,7 @@ const router = createBrowserRouter([
             },
             {
                 path: '/details/:id',
-                element: <PrivateRoutes><Details /></PrivateRoutes>,
-                loader: () => fetch('data.json')
+                element: <PrivateRoutes><Details /></PrivateRoutes>
             },
             
             {
@@ -29,7 +28,7 @@ const router = createBrowserRouter([
             },
             {
                 path: '/notification',
-                element: <Notification />
+                element: <PrivateRoutes><Notification /></PrivateRoutes>
             },
             {
                 path: '/signin',
@@ -38,16 +37,12 @@ const router = createBrowserRouter([
             {
                 path: '/signup',
                 element: <SignUp />
-            },
-            {
-                path: '/dashboard',
-                element: <Dashboard />
             }
         ]
     },
     {
         path: '*',
-        element: <h1>404 NOT FOUND!! - SAMTECH EXPO</h1>
+        element: <div className='w-full h-screen flex justify-center items-center'><h1>404 NOT FOUND | SAMITECH EXPO</h1></div>
     }
 ])
 

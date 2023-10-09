@@ -6,16 +6,19 @@ import { useContext } from 'react'
 export default function Dashboard() {
 
     const {user} = useContext(AuthContext)
-    console.log(user)
+
    
   return (
     <div>
         <div><h1 className='text-4xl mb-5'>Dashboard</h1></div>
         <div className="grid grid-cols-3 gap-6">
 			<div className="flex flex-col items-center gap-3 border border-gray-500 p-6 rounded">
-				<BiUserCircle className='text-7xl'/>
+				<img className='w-16 h-16 rounded-full border-2 border-green-500' src={user.photoURL} alt="" />
                 {
-                   
+                  <>
+                   <span>Name: {user.displayName}</span>
+                   <span>Email: {user.email}</span>
+                  </>
                 }
 			</div>
 			<div className='col-span-2 border border-gray-500 p-6 rounded'>

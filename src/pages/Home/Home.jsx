@@ -5,6 +5,7 @@ import FAQ from "./FAQ";
 import Leaderboard from "./Leaderboard";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import toast from "react-hot-toast";
 
 export default function Home() {
 
@@ -16,7 +17,7 @@ export default function Home() {
     .then(res => res.json())
     .then(data => setEvents(data))
     .catch(err => {
-      console.log(err)
+      toast.error(err)
     })
   }, [])
 

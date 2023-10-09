@@ -21,7 +21,7 @@ export default function SignIn() {
 
     signInUser(email, pass)
     .then(res => {
-      console.log(res)
+
       toast.success('Welcome Back!');
       navigate(location?.state ? location.state : '/')
     })
@@ -35,7 +35,7 @@ export default function SignIn() {
    
     signInGoogleUser()
     .then(res => {
-      console.log(res)
+  
       toast.success('Welcome Back!');
       navigate(location?.state ? location.state : '/')
     })
@@ -68,7 +68,7 @@ export default function SignIn() {
         <div className="form-control mt-6">
           <button className="btn btn-primary mb-4">Login</button>
 
-          <button className='btn btn-accent text-white' onClick={handleSignInGoogle}> <BiLogoGoogle className='text-xl' /> Google Sign In</button>
+          <button type="button" className='btn btn-accent text-white' onClick={handleSignInGoogle}> <BiLogoGoogle className='text-xl' /> Google Sign In</button>
         </div>
         <label className="label">
             Don't have an account? <NavLink to='/signup'>Sign Up</NavLink>

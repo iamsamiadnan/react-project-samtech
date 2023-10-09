@@ -1,15 +1,19 @@
 
 import { useContext } from 'react';
-import { NavLink } from 'react-router-dom'
+import { NavLink, useNavigate } from 'react-router-dom'
 import { AuthContext } from '../../providers/AuthProvider';
 import toast from 'react-hot-toast';
+import { updateCurrentUser } from 'firebase/auth';
 
 export default function SignUp() {
-const {createUser} = useContext(AuthContext)
+const {createUser, updateUserProfile, signOutUser} = useContext(AuthContext)
+const navigate = useNavigate()
+
 const handleSignUp = e => {
     e.preventDefault();
     const form = new FormData(e.currentTarget)
     const name = form.get('name')
+    const url = form.get('url')
     const email = form.get('email')
     const pass = form.get('pass')
     const cpass = form.get('cpass')
@@ -35,12 +39,22 @@ const handleSignUp = e => {
 
     createUser(email, pass)
     .then(res => {
-      toast.success("Thank you for signing up")
-      console.log(res)
+    
+
+      updateUserProfile(name, url)
+      .then(() => {
+        toast.success("Signed Up Successful! Please Login")
+        signOutUser()
+        navigate('/signin')
+      })
+      .catch(err => {
+        toast.error(err.code)
+
+      })
     })
     .catch(err => {
    
-        console.log(err)
+        toast.error(err)
     })
 }
 
@@ -52,6 +66,12 @@ const handleSignUp = e => {
             <span className="label-text">Name*</span>
           </label>
           <input type="text" name="name" placeholder="name" className="input input-bordered" required />
+        </div>
+        <div className="form-control">
+          <label className="label">
+            <span className="label-text">Photo URL*</span>
+          </label>
+          <input type="text" name="url" placeholder="photo url" className="input input-bordered" required />
         </div>
         <div className="form-control">
           <label className="label">

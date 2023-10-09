@@ -4,7 +4,7 @@ export default function FAQ() {
 	return (
 		<div className="flex flex-col gap-6">
 			<div className="collapse collapse-arrow bg-base-200">
-				<input type="radio" name="my-accordion-2" checked="checked" />
+				<input type="radio" name="my-accordion-2" />
 				<div className="collapse-title text-xl font-medium">
                 How can I purchase tickets for the event?
 				</div>

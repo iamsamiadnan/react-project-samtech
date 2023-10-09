@@ -11,14 +11,14 @@ export default function Slider() {
       spaceBetween={50}
       loop={true}
       slidesPerView={1}
-      onSlideChange={() => console.log('slide change')}
+
       autoplay={{
         delay: 1500,
         disableOnInteraction: false,
       }}
       
       modules={[Autoplay]}
-      onSwiper={(swiper) => console.log(swiper)}
+  
       
     >   
       <SwiperSlide><img className='w-full object-cover'  src="https://i.ibb.co/gdLzBmX/Rectangle-11.webp" alt="" /></SwiperSlide>

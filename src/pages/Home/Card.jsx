@@ -5,7 +5,7 @@ export default function Card({event}) {
 	const navigate = useNavigate()
 
 	return (
-		<div className="card w-full bg-base-100 shadow-xl hover:cursor-pointer" >
+		<div className="card w-full bg-base-100 shadow-xl " >
 			<figure>
 				<img className="object-cover"
 					src={thumbnail_image}
@@ -22,7 +22,7 @@ export default function Card({event}) {
                 </p>
 		
 				<div className="flex justify-center my-2">
-					<a href={`/details/${id}`} class="btn btn-sm btn-primary">See Details</a>
+					<a href={`/details/${id}`} className="btn btn-sm btn-primary">See Details</a>
 				</div>
 				<div className="card-actions justify-end">
 					
