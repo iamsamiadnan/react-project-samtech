@@ -1,0 +1,135 @@
+[
+    {
+      "id": 1,
+      "title": "Tech Expo 2023",
+      "posted_date": "2023-10-08",
+      "event_date": "2023-11-15",
+      "thumbnail_image": "https://example.com/techexpo.jpg",
+      "description": "Join us for the largest tech expo of the year, featuring the latest gadgets and innovations from leading tech companies.",
+      "ticket_price": 25.99,
+      "event_categories": ["Tech", "Gaming"],
+      "location": "San Francisco, CA"
+    },
+    {
+      "id": 2,
+      "title": "Gamer's Paradise Convention",
+      "posted_date": "2023-09-20",
+      "event_date": "2023-12-05",
+      "thumbnail_image": "https://example.com/gamersparadise.jpg",
+      "description": "Get ready for the ultimate gaming experience! Join fellow gamers for tournaments, cosplay, and exclusive game previews.",
+      "ticket_price": 30.50,
+      "event_categories": ["Gaming"],
+      "location": "Los Angeles, CA"
+    },
+    {
+      "id": 3,
+      "title": "AI and Robotics Symposium",
+      "posted_date": "2023-08-15",
+      "event_date": "2023-10-20",
+      "thumbnail_image": "https://example.com/aisymposium.jpg",
+      "description": "Explore the future of artificial intelligence and robotics at this cutting-edge symposium featuring renowned experts.",
+      "ticket_price": 19.99,
+      "event_categories": ["Tech"],
+      "location": "New York, NY"
+    },
+    {
+      "id": 4,
+      "title": "Game Developers Conference",
+      "posted_date": "2023-07-10",
+      "event_date": "2023-11-08",
+      "thumbnail_image": "https://example.com/gdc.jpg",
+      "description": "Connect with game developers, attend workshops, and discover the latest trends in the gaming industry.",
+      "ticket_price": 35.75,
+      "event_categories": ["Gaming"],
+      "location": "Austin, TX"
+    },
+    {
+      "id": 5,
+      "title": "Tech Innovators Summit",
+      "posted_date": "2023-06-05",
+      "event_date": "2023-10-25",
+      "thumbnail_image": "https://example.com/techinnovators.jpg",
+      "description": "A gathering of tech visionaries and innovators to discuss the future of technology and its impact on society.",
+      "ticket_price": 29.99,
+      "event_categories": ["Tech"],
+      "location": "Seattle, WA"
+    },
+    {
+      "id": 6,
+      "title": "E-Sports Championship",
+      "posted_date": "2023-05-01",
+      "event_date": "2023-09-10",
+      "thumbnail_image": "https://example.com/esportschampionship.jpg",
+      "description": "Witness the best e-sports teams battle it out for glory in this thrilling championship event.",
+      "ticket_price": 15.00,
+      "event_categories": ["Gaming"],
+      "location": "Chicago, IL"
+    },
+    {
+      "id": 7,
+      "title": "VR and AR Expo",
+      "posted_date": "2023-04-02",
+      "event_date": "2023-08-18",
+      "thumbnail_image": "https://example.com/vrarexpo.jpg",
+      "description": "Experience the future of virtual and augmented reality technology at this immersive expo.",
+      "ticket_price": 24.50,
+      "event_categories": ["Tech", "Gaming"],
+      "location": "Miami, FL"
+    },
+    {
+      "id": 8,
+      "title": "Indie Game Showcase",
+      "posted_date": "2023-03-15",
+      "event_date": "2023-07-30",
+      "thumbnail_image": "https://example.com/indiegameshowcase.jpg",
+      "description": "Discover the creativity of indie game developers and play their unique and innovative games.",
+      "ticket_price": 12.99,
+      "event_categories": ["Gaming"],
+      "location": "Denver, CO"
+    },
+    {
+      "id": 9,
+      "title": "Cybersecurity Summit",
+      "posted_date": "2023-02-10",
+      "event_date": "2023-06-22",
+      "thumbnail_image": "https://example.com/cybersecuritysummit.jpg",
+      "description": "Learn about the latest cybersecurity threats and strategies to protect your digital assets.",
+      "ticket_price": 22.75,
+      "event_categories": ["Tech"],
+      "location": "San Diego, CA"
+    },
+    {
+      "id": 10,
+      "title": "Mobile Gaming Expo",
+      "posted_date": "2023-01-05",
+      "event_date": "2023-05-15",
+      "thumbnail_image": "https://example.com/mobilegamingexpo.jpg",
+      "description": "Explore the world of mobile gaming, play new releases, and meet mobile game developers.",
+      "ticket_price": 18.50,
+      "event_categories": ["Gaming"],
+      "location": "Orlando, FL"
+    },
+    {
+      "id": 11,
+      "title": "Artificial Intelligence Workshop",
+      "posted_date": "2022-12-01",
+      "event_date": "2023-04-10",
+      "thumbnail_image": "https://example.com/aiworkshop.jpg",
+      "description": "Hands-on workshop to learn practical applications of artificial intelligence in various industries.",
+      "ticket_price": 26.99,
+      "event_categories": ["Tech"],
+      "location": "Boston, MA"
+    },
+    {
+      "id": 12,
+      "title": "Gaming Night Extravaganza",
+      "posted_date": "2022-11-15",
+      "event_date": "2023-03-28",
+      "thumbnail_image": "https://example.com/gamingnight.jpg",
+      "description": "A fun-filled night of gaming, competitions, and prizes for gamers of all skill levels.",
+      "ticket_price": 10.00,
+      "event_categories": ["Gaming"],
+      "location": "Houston, TX"
+    }
+  ]
+  
