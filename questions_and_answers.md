@@ -18,9 +18,9 @@ console.log(greetign);
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: ?
+#### Answer: A: `{}`
 
-<i>Write your explanation here</i>
+<i>in javascript, if a variable is assigned with a value without var, let or const keyword it becomes a global variable and acts like var. so here 'greetign' is a valid assignment which was assigned with a empty object. so the console log will be {}.</i>
 
 </p>
 </details>
@@ -43,9 +43,11 @@ sum(1, "2");
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: ?
+#### Answer: C: `"12"`
 
-<i>Write your explanation here</i>
+<i>
+in javascript, when you put + sign between a number and a string, it performs string concatenation. because addition can only be done between numbers.
+</i>
 
 </p>
 </details>
@@ -69,9 +71,11 @@ console.log(food);
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: ?
+#### Answer: A: `['🍕', '🍫', '🥑', '🍔']`
 
-<i>Write your explanation here</i>
+<i>
+in this code, we are not changing any items of the original array food. so it will display as it was.
+</i>
 
 </p>
 </details>
@@ -94,9 +98,11 @@ console.log(sayHi());
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: ?
+#### Answer: B: `Hi there, undefined`
 
-<i>Write your explanation here</i>
+<i>
+  while calling sayHi() we are not passing any argument here. in the function defination the name was declared as a parameter but it has no default value also. so the name variable is declared but never assigned any value. so the unassigned variable will contain undefined.
+</i>
 
 </p>
 </details>
@@ -122,9 +128,11 @@ console.log(count);
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: ?
+#### Answer: C: 3
 
-<i>Write your explanation here</i>
+<i>
+in javascript, 0 is a falsy value. when we are interating the array nums, for each value of nums (except 0) the if condition will be true, so we will get total of count = 3 for item 1, 2 and 3.
+</i>
 
 </p>
 </details>

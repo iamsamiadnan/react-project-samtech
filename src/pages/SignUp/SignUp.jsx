@@ -2,6 +2,7 @@
 import { useContext } from 'react';
 import { NavLink } from 'react-router-dom'
 import { AuthContext } from '../../providers/AuthProvider';
+import toast from 'react-hot-toast';
 
 export default function SignUp() {
 const {createUser} = useContext(AuthContext)
@@ -13,11 +14,32 @@ const handleSignUp = e => {
     const pass = form.get('pass')
     const cpass = form.get('cpass')
 
+
+    if(pass !== cpass) {
+      toast.error("Password doesn't match. Please check again!");
+      return;
+    }
+    if(pass.length < 6) {
+      toast.error("Password is less than 6 characters!");
+      return;
+    }
+    if(!/[A-Z]/.test(pass)) {
+      toast.error("Password should contain at least 1 uppercase letter!")
+      return;
+    }
+    if(!/[!#$%^&*]/.test(pass)) {
+      toast.error("Password should contain at least 1 special character!")
+      return;
+    }
+
+
     createUser(email, pass)
     .then(res => {
-        console.log(res)
+      toast.success("Thank you for signing up")
+      console.log(res)
     })
     .catch(err => {
+   
         console.log(err)
     })
 }

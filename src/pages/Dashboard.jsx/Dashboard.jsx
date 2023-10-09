@@ -5,7 +5,7 @@ import { AuthContext } from '../../providers/AuthProvider'
 export default function Dashboard() {
 
     const {user} = useContext(AuthContext)
-console.log(user.email)
+    console.log(user)
    
   return (
     <div>
@@ -14,11 +14,7 @@ console.log(user.email)
 			<div className="flex flex-col items-center gap-3 border border-gray-500 p-6 rounded">
 				<BiUserCircle className='text-7xl'/>
                 {
-                    user ? <>
-                    <span>{user.email}</span>
-                    <span></span>
-                    
-                    </> : ""
+                   
                 }
 			</div>
 			<div className='col-span-2 border border-gray-500 p-6 rounded'>
