@@ -1,9 +1,11 @@
 import React, { useContext } from 'react'
-import { NavLink } from 'react-router-dom'
+import { NavLink, useLocation, useNavigate } from 'react-router-dom'
 import { AuthContext } from '../../providers/AuthProvider';
 
 export default function SignIn() {
   const {signInUser} = useContext(AuthContext)
+  const location = useLocation()
+  const navigate = useNavigate()
 
   const handleSignIn = (e) => {
     e.preventDefault();
@@ -14,6 +16,7 @@ export default function SignIn() {
     signInUser(email, pass)
     .then(res => {
       console.log(res)
+      navigate(location?.state ? location.state : '/')
     })
     .catch(err => {
       console.log(err)
