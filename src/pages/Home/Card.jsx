@@ -1,11 +1,11 @@
 import { useNavigate } from "react-router-dom";
 
 export default function Card({event}) {
-    const {id, title, description, event_categories, thumbnail_image} = event
+    const {id, title, description, event_categories, thumbnail_image, ticket_price} = event
 	const navigate = useNavigate()
 
 	return (
-		<div className="card w-full bg-base-100 shadow-xl hover:cursor-pointer" onClick={() => navigate(`/details/${id}`)}>
+		<div className="card w-full bg-base-100 shadow-xl hover:cursor-pointer" >
 			<figure>
 				<img className="object-cover"
 					src={thumbnail_image}
@@ -15,11 +15,15 @@ export default function Card({event}) {
 			<div className="card-body">
 				<h2 className="card-title">
 					{title}
-					<div className="badge badge-secondary">NEW</div>
+					<div className="badge badge-secondary">${ticket_price}</div>
 				</h2>
 				<p>
                     {description.substring(0, 80)} ...
                 </p>
+		
+				<div className="flex justify-center my-2">
+					<a href={`/details/${id}`} class="btn btn-sm btn-primary">See Details</a>
+				</div>
 				<div className="card-actions justify-end">
 					
                     {
@@ -28,6 +32,7 @@ export default function Card({event}) {
 
 
 				</div>
+				
 			</div>
 		</div>
 	);
