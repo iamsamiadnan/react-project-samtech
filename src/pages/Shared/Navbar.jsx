@@ -9,7 +9,8 @@ export default function Navbar() {
 		
 
 		<li><NavLink to='/'>Home</NavLink></li>
-		<li><NavLink to='details'>Details</NavLink></li>
+		<li><NavLink to='/dashboard'>Dashboard</NavLink></li>
+		<li><NavLink to='/notifications'>Notifcation</NavLink></li>
 	</>
 
 	const handleSignOut = () => {

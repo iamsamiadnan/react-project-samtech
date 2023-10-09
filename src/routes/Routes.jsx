@@ -5,7 +5,8 @@ import Details from '../pages/Details/Details'
 import SignIn from '../pages/SignIn/SignIn'
 import SignUp from '../pages/SignUp/SignUp'
 import PrivateRoutes from './PrivateRoutes'
-import Dashboard from '../pages/Dashboard.jsx/Dashboard'
+import Dashboard from '../pages/Dashboard/Dashboard'
+import Notification from '../pages/Notification/Notification'
 
 const router = createBrowserRouter([
     {
@@ -21,6 +22,15 @@ const router = createBrowserRouter([
                 element: <PrivateRoutes><Details /></PrivateRoutes>,
                 loader: () => fetch('data.json')
             },
+            
+            {
+                path: '/dashboard',
+                element: <PrivateRoutes><Dashboard /></PrivateRoutes>
+            },
+            {
+                path: '/notification',
+                element: <Notification />
+            },
             {
                 path: '/signin',
                 element: <SignIn />
@@ -35,6 +45,10 @@ const router = createBrowserRouter([
             }
         ]
     },
+    {
+        path: '*',
+        element: <h1>404 NOT FOUND!! - SAMTECH EXPO</h1>
+    }
 ])
 
 export default router

@@ -1,6 +1,7 @@
-import React, { useContext } from 'react'
+
 import { BiUserCircle } from 'react-icons/bi'
 import { AuthContext } from '../../providers/AuthProvider'
+import { useContext } from 'react'
 
 export default function Dashboard() {
 
@@ -21,7 +22,8 @@ export default function Dashboard() {
 				<div>
                     <p>
                     <b>Registration and Ticket Purchase:</b><br/>
-To join our event, the first step is to register and purchase your tickets. Visit our event website, where you'll find detailed information about the event, including the date, location, and ticket pricing. Select the type of ticket that suits your needs and follow the prompts to complete your purchase. You can typically choose between online ticketing or buying tickets at the door. We recommend purchasing tickets in advance to secure your spot and avoid long lines on the event day.
+                    To participate in our event, the initial step involves registering and acquiring your event passes. Simply head over to our event's official website, where you'll discover comprehensive details about the event, such as its date, venue, and ticket pricing. Pick the ticket category that best aligns with your requirements and proceed to finalize your purchase. You generally have the option to either purchase your tickets online or buy them in-person at the event's entrance. We strongly advise purchasing your tickets in advance to ensure your attendance and to skip lengthy queues on the event day.
+
                     </p>
                 </div>
 			</div>
