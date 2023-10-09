@@ -1,10 +1,30 @@
-import React from 'react'
+
+import { useContext } from 'react';
 import { NavLink } from 'react-router-dom'
+import { AuthContext } from '../../providers/AuthProvider';
 
 export default function SignUp() {
+const {createUser} = useContext(AuthContext)
+const handleSignUp = e => {
+    e.preventDefault();
+    const form = new FormData(e.currentTarget)
+    const name = form.get('name')
+    const email = form.get('email')
+    const pass = form.get('pass')
+    const cpass = form.get('cpass')
+
+    createUser(email, pass)
+    .then(res => {
+        console.log(res)
+    })
+    .catch(err => {
+        console.log(err)
+    })
+}
+
   return (
     <div className="card flex-shrink-0 w-full max-w-sm border border-gray-500 rounded bg-base-100">
-      <form className="card-body">
+      <form onSubmit={e => handleSignUp(e)} className="card-body">
       <div className="form-control">
           <label className="label">
             <span className="label-text">Name*</span>

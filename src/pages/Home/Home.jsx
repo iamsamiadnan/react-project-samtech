@@ -5,6 +5,7 @@ import Card from "./Card";
 export default function Home() {
 
   const [events, setEvents] = useState([])
+  
 
   useEffect(() => {
     fetch('data.json')

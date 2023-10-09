@@ -1,11 +1,14 @@
+import { useNavigate } from "react-router-dom";
+
 export default function Card({event}) {
-    const {title, description, event_categories} = event
+    const {id, title, description, event_categories, thumbnail_image} = event
+	const navigate = useNavigate()
 
 	return (
-		<div className="card w-full bg-base-100 shadow-xl">
+		<div className="card w-full bg-base-100 shadow-xl hover:cursor-pointer" onClick={() => navigate(`/details/${id}`)}>
 			<figure>
-				<img
-					src="https://daisyui.com//images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
+				<img className="object-cover"
+					src={thumbnail_image}
 					alt="Shoes"
 				/>
 			</figure>
