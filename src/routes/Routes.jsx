@@ -4,6 +4,7 @@ import Root from '../layouts/Root'
 import Details from '../pages/Details/Details'
 import SignIn from '../pages/SignIn/SignIn'
 import SignUp from '../pages/SignUp/SignUp'
+import PrivateRoutes from './PrivateRoutes'
 
 const router = createBrowserRouter([
     {
@@ -16,7 +17,7 @@ const router = createBrowserRouter([
             },
             {
                 path: '/details/:id',
-                element: <Details />,
+                element: <PrivateRoutes><Details /></PrivateRoutes>,
                 loader: () => fetch('data.json')
             },
             {

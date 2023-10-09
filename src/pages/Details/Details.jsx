@@ -13,9 +13,21 @@ export default function Details() {
     const {title, posted_date, event_date, thumbnail_image, description, ticket_price, event_categories, location} = event
 
     useEffect(() => {
-      const event = data.find(ev => ev.id === parseInt(id))
-      setEvent(event)
-    } , [id, data])
+      console.log('hello', typeof data)
+      if(typeof data === 'string') {
+              fetch('/data.json')
+          .then(res => res.json())
+          .then(dt => {
+            const event = dt.find(ev => ev.id === parseInt(id))
+            setEvent(event)
+          })
+          .catch(err => {
+            console.log(err)
+          })
+      }
+    } , [])
+
+    
  
   
   return (
@@ -48,7 +60,7 @@ export default function Details() {
           <div className="divider m-0">Tags</div>
           <div className="p-6 flex gap-2">
             {
-              event_categories.map((ec, idx) => <div key={idx} className="badge badge-primary badge-outline">{ec}</div>)
+              event_categories && event_categories.map((ec, idx) => <div key={idx} className="badge badge-primary badge-outline">{ec}</div>)
             }
           </div>
         </div>
