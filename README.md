@@ -2,7 +2,7 @@ Add at least 5 meaningful Github commits. Meaningful `readme.md` file containing
 
 # WEBSITE DETAILS
 WEBSITE NAME: SAMTECH EXPO
-LIVE SITE LINK: https://www.samtechexpo.surge.sh
+LIVE SITE LINK: https://react-event-fbb0b.web.app 
 
 # FEATURES
 * email/pass and google authentication feature with firebase
