@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import Card from "./Card";
+import Slider from "./Slider";
 
 
 export default function Home() {
@@ -18,6 +19,9 @@ export default function Home() {
   return (
    <>
    
+   <div className="rounded mb-14 overflow-hidden">
+    <Slider />
+   </div>
     <div className="grid grid-cols-4 gap-6">
       {
         events.map((event, idx) => <Card key={idx} event={event}/>)
