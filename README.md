@@ -1,5 +1,3 @@
-Add at least 5 meaningful Github commits. Meaningful `readme.md` file containing your website name and a link to your live site. Add at least five bullet points mentioning different features and functionalities of your website.
-
 # WEBSITE DETAILS
 WEBSITE NAME: SAMTECH EXPO
 LIVE SITE LINK: https://react-event-fbb0b.web.app 
